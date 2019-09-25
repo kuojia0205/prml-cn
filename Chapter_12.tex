@@ -1,0 +1,129 @@
+\documentclass{book}
+\usepackage{ctex}
+\usepackage[margin=0.8in]{geometry}
+\geometry{top=2.5cm}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{cuted}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyhdr}
+\usepackage{xeCJK}
+\usepackage{titlesec}
+\definecolor{titleBlue}{RGB}{30,59,150}
+\titleformat{\chapter}[block]{\huge\bfseries\color{titleBlue}}{第 \thechapter 章}{1em}{}
+\titleformat{\section}[block]{\Large\bfseries\color{titleBlue}}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\large\bfseries\color{titleBlue}}{\thesubsection}{1em}{}
+\titlespacing*{\section} {0pt}{10pt}{0pt}
+% \renewcommand{\chaptermark}[1]{\markboth{第\,\thechapter\,章\quad #1}{}}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\CJKfamily{hei} \color{titleBlue}{第 \thechapter 章\quad #1} }{}}
+\renewcommand{\sectionmark}[1]{\markright{\CJKfamily{hei} \color{titleBlue}  \thesection \quad #1}{}}
+
+\fancyhead{} % clear all fields
+\fancyhead[LO]{\CJKfamily{hei} \bfseries \color{titleBlue}{\rightmark}}
+\fancyhead[RO]{\CJKfamily{hei} \bfseries \color{titleBlue}  \thepage}
+\fancyhead[LE]{\CJKfamily{hei} \bfseries \color{titleBlue}  \thepage}
+\fancyhead[RE]{\CJKfamily{hei} \bfseries \color{titleBlue}{\leftmark}}
+
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\setlength{\parindent}{2em}
+\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+\numberwithin{equation}{chapter}
+
+\newcommand {\bx} {\boldsymbol{\mathrm{x}}}
+\newcommand {\bw} {\boldsymbol{\mathrm{w}}}
+\newcommand {\sfx} {\boldsymbol{\mathsf{x}}}
+\newcommand {\sft} {\boldsymbol{\mathsf{t}}}
+\newcommand {\sfy} {\boldsymbol{\mathsf{y}}}
+\newcommand {\rmT} {\mathrm{T}}
+\newcommand {\rmd} {\mathrm{d}}
+\newcommand {\bfMu} {\boldsymbol{\mu}}
+\newcommand {\bfAl} {\boldsymbol{\alpha}}
+\newcommand {\bfSigma} {\boldsymbol{\Sigma}}
+\newcommand {\bfLambda} {\boldsymbol{\Lambda}}
+\newcommand {\bfPhi} {\boldsymbol{\Phi}}
+\newcommand {\bfphi} {\boldsymbol{\phi}}
+\newcommand {\bfeta} {\boldsymbol{\eta}}
+\newcommand {\calD} {\mathcal{D}}
+\newcommand {\calN} {\mathcal{N}}
+\newcommand {\calR} {\mathcal{R}}
+\newcommand {\insertline} {\noindent{\color{red} \rule[5pt]{\textwidth}{0.1em}}}
+
+\author{张括嘉 \\ 东北大学机器人科学与工程学院}
+
+\begin{document}
+\title{Pattern Recognition and Machine Learning 中文版}
+\date{}
+% \maketitle
+	\chapter{绪 \quad 论}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+	
+	\chapter{概率分布}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+	
+	\chapter{线性回归模型}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+	
+	\chapter{线性分类模型}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{神经网络}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+	
+	\chapter{核方法}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{稀疏核机器}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{图模型}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{混合模型与EM算法}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{近似推断}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{采样方法}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{连续隐变量}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+\end{document}

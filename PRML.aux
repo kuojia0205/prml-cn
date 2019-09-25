@@ -1,0 +1,350 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}绪 \hskip 1em\relax 论}{1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.1}{\ignorespaces 来自美国邮政编码的手写数字示例\relax }}{1}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:1-1}{{1{}.1}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}实例：多项式曲线拟合}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.2}{\ignorespaces 一个包含了$N=10$个点的训练集的图像，如图中蓝色圆圈所示，每个点都包括了输入变量$x$的观测值及其对应的目标变量值$t$。绿色的曲线表示用于生成数据的函数$\qopname  \relax o{sin}(2 \pi x)$。我们的目标是在绿色曲线未知的情况下，对于新的$x$值，预测其对应的$t$值。\relax }}{4}}
+\newlabel{fig:1-2}{{1{}.2}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.3}{\ignorespaces 误差函数(1.2)对应每个数据点与函数$y(x, \mathbf  {w})$之间相差距离(绿色垂直线)的平方和(的一半)。\relax }}{5}}
+\newlabel{fig:1-3}{{1{}.3}{5}}
+\newlabel{fig:1-4a}{{\caption@xref {fig:1-4a}{ on input line 255}}{6}}
+\newlabel{fig:1-4b}{{\caption@xref {fig:1-4b}{ on input line 255}}{6}}
+\newlabel{fig:1-4c}{{\caption@xref {fig:1-4c}{ on input line 255}}{6}}
+\newlabel{fig:1-4d}{{\caption@xref {fig:1-4d}{ on input line 255}}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.4}{\ignorespaces 在$M$变化时的拟合图1.2所示数据的多项式图像(红色曲线)。\relax }}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.5}{\ignorespaces 在不同的$M$值下，在训练集和独立测试集上根据(1.3)计算的均方根误差图像。\relax }}{7}}
+\newlabel{fig:1-5}{{1{}.5}{7}}
+\@writefile{lot}{\contentsline {table}{\numberline {1{}.1}{\ignorespaces 不同阶数的多项式中的系数$\mathbf  {w^\star }$。显而易见，随着阶数的增长，系数的绝对值也在飞速增长。\relax }}{8}}
+\newlabel{fig:1-6a}{{\caption@xref {fig:1-6a}{ on input line 255}}{8}}
+\newlabel{fig:1-6b}{{\caption@xref {fig:1-6b}{ on input line 255}}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.6}{\ignorespaces 在$M=9$的情况下，基于$N=15$(左)和$N=100$(右)个数据点进行平方和误差函数最小化得到的结果图像。我们可以看到，数据集规模的增加削弱了过拟合的问题。\relax }}{8}}
+\newlabel{fig:1-7a}{{\caption@xref {fig:1-7a}{ on input line 255}}{8}}
+\newlabel{fig:1-7b}{{\caption@xref {fig:1-7b}{ on input line 255}}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.7}{\ignorespaces 在$M=9$的情况下，使用(1.4)中的正则化误差函数对图1.2所示的数据集进行拟合，并将正则化参数$\lambda $设置为$\qopname  \relax o{ln}\lambda = -18$和$\qopname  \relax o{ln}\lambda = 0$。没有正则化的情况(即$\lambda =0$，$\qopname  \relax o{ln}\lambda = -\infty $)如图1.4中的右下图所示。\relax }}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {1{}.2}{\ignorespaces 在$M=9$的情况下，不同的正则化参数$\lambda $对应的多项式系数$\mathbf  {w^\star }$。需要注意的是，$\qopname  \relax o{ln}\lambda = - \infty $对应的是图1.4中所示的无正则化的模型。可以看到，随着$\lambda $的增大，系数的大小会随之减小。\relax }}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.8}{\ignorespaces 在$M=9$的情况下，均方根误差(1.3)随着$\qopname  \relax o{ln}\lambda $的变化情况。\relax }}{10}}
+\newlabel{fig:1-8}{{1{}.8}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}概率论}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.9}{\ignorespaces 我们使用一个简单的小例子来介绍概率论的基础思想，图中是两个不同的箱子，箱子里放着不同类型的水果(绿色的是苹果，橙色的是橙子)。\relax }}{11}}
+\newlabel{fig:1-9}{{1{}.9}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.10}{\ignorespaces 我们可以通过这样的例子来推导加法规则和乘法规则，有两个随机变量$X$和$Y$，其中$X$的取值范围是$\{x_i\},i=1,...,M$，$Y$的取值范围是$\{y_j\},j=1,...,L$。假设$M=5,L=3$，总共进行$N$次实验，将$X=x_i$且$Y=y_j$的次数记作$n_{ij}$，也就是落在相应单元格内的结果总数。在第$i$列中的点数对应的是$X=x_i$的情况发生的次数，记作$c_i$，在第$j$行中的点数对应的是$Y=y_j$的情况发生的次数，记作$r_j$。\relax }}{12}}
+\newlabel{fig:1-10}{{1{}.10}{12}}
+\newlabel{fig:1-11a}{{\caption@xref {fig:1-11a}{ on input line 378}}{14}}
+\newlabel{fig:1-11b}{{\caption@xref {fig:1-11b}{ on input line 378}}{14}}
+\newlabel{fig:1-11c}{{\caption@xref {fig:1-11c}{ on input line 378}}{14}}
+\newlabel{fig:1-11d}{{\caption@xref {fig:1-11d}{ on input line 378}}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.11}{\ignorespaces 两个变量的分布图，$X$有9种可能的取值，$Y$有2种可能的取值。左上图显示了从这些变量的联合概率分布中抽取的60个样本点。其余图显示了边缘分布$p(X)$和$p(Y)$的直方图估计，以及对应于左上图中下面一行的条件分布$p(X|Y=1)$。\relax }}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}概率密度}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.12}{\ignorespaces 离散变量的概率可以扩展为连续变量$x$的概率密度$p(x)$，于是$x$的取值落在区间$(x,x+\delta x)$中的概率由$p(x)\delta x , \delta x \rightarrow 0$给出。概率密度可以被表示为累积分布函数(即分布函数，cumulative distribution function)的导数。\relax }}{16}}
+\newlabel{fig:1-12}{{1{}.12}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}期望与协方差}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}贝叶斯概率}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.4}高斯分布}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.13}{\ignorespaces 标出了均值$\mu $和标准差$\sigma $的高斯分布\relax }}{22}}
+\newlabel{fig:1-13}{{1{}.13}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.14}{\ignorespaces 高斯分布的似然函数，即图中的红色曲线。黑点表示数据集中的值$\left \{x_n\right \}$，(1.53)中给出的似然函数对应的是图中蓝点的乘积。似然函数最大化的过程也包含了均值和方差的调整，从而使该乘积达到最大值。\relax }}{23}}
+\newlabel{fig:1-14}{{1{}.14}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.15}{\ignorespaces 在利用最大似然估计确定高斯分布的方差时产生偏移的说明。其中绿色的曲线表示产生数据集的真实高斯分布，三条红色曲线表示基于三个不同的数据集得到的高斯分布拟合结果，每个数据集包含两个数据点，在图中用蓝色的点表示，根据(1.55)和(1.56)给出的结论进行拟合。对三个数据集求平均数，可以看出均值是正确的，但方差被低估了，因为它根据样本均值确定，而非真实的均值。\relax }}{25}}
+\newlabel{fig:1-15}{{1{}.15}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.5}重返曲线拟合问题}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.16}{\ignorespaces (1.60)中给定$x$的情况下$t$的高斯分布。其均值由多项式函数$y(x,\mathbf  {w})$给出，$\beta $为与方差相关的精确度参数，$\beta ^{-1}=\sigma ^2$。\relax }}{26}}
+\newlabel{fig:1-16}{{1{}.16}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.6}曲线拟合的贝叶斯方法}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.17}{\ignorespaces 利用$M=9$的多项式，利用贝叶斯处理得到的多项式曲线拟合结果，其中，参数$\alpha = 5 \times 10^{-3}$，$\beta = 11.1$(对应于已知的噪声方差)，红色的曲线表示预测分布的均值，红色的区域表示平均值附近$\pm 1$标准差的区域。\relax }}{28}}
+\newlabel{fig:1-17}{{1{}.17}{28}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}模型选择}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.18}{\ignorespaces 以$S=4$为例的$S$重交叉验证，将可用数据划分为$S$组(最简单的办法是平均分配，每组的数据数量一样)。于是$S-1$组的数据可以用于训练模型，剩下的组用于评估。然后对于留出组(红色方块)的所有$S$种可能的情况重复这个过程，最后对$S$次实验中的性能得分取平均数。\relax }}{29}}
+\newlabel{fig:1-18}{{1{}.18}{29}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}维数灾难}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.19}{\ignorespaces 来自油流数据的输入量$x_6$，$x_7$的散点图，其中红色表示“均质”类，绿色代表“环状物”类，蓝色代表“层状物”类，我们的目标是将新的数据点“$\times $”进行分类。\relax }}{31}}
+\newlabel{fig:1-19}{{1{}.19}{31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.20}{\ignorespaces 对于上述分类问题的一个简单方法，其中输入空间被划分成若干元组，对于任何的新测试点，其类别都会被预测为其所在元组中数量最多的那种数据点的类别。很快我们就会看到这样的办法有很多致命的缺点。\relax }}{31}}
+\newlabel{fig:1-20}{{1{}.20}{31}}
+\newlabel{fig:1-21a}{{\caption@xref {fig:1-21a}{ on input line 766}}{32}}
+\newlabel{fig:1-21b}{{\caption@xref {fig:1-21b}{ on input line 766}}{32}}
+\newlabel{fig:1-21c}{{\caption@xref {fig:1-21c}{ on input line 766}}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.21}{\ignorespaces 维数灾难的示意图，展示了区域中格子的数量如何随着空间维度$D$的上升而呈指数型上涨。为了简洁，这里仅展示到$D=3$的情况。\relax }}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.22}{\ignorespaces 对于不同的$D$，球体中位于$r=1-\epsilon $与$r=1$之间的体积\relax }}{33}}
+\newlabel{fig:1-22}{{1{}.22}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.23}{\ignorespaces 在维数$D$取不同值时关于$r$的高斯分布的概率密度。在高维的空间中，一个高斯分布的概率质量主要集中在特定半径位置的薄壳内。\relax }}{33}}
+\newlabel{fig:1-23}{{1{}.23}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.5}决策论}{34}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.1}分类误差最小化}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.24}{\ignorespaces 在二分类问题中两种类别分别关于$x$的联合概率$p(x,\mathcal  {C}_k)$，同时指出了决策界$x=\mathaccentV {hat}65E{x}$的示意图。若$x \geqslant \mathaccentV {hat}65E{x}$则分类为$\mathcal  {C}_2$，所以是属于决策域$\mathcal  {R}_2$的，反过来，如果$x < \mathaccentV {hat}65E{x}$则分类为$\mathcal  {C}_1$，属于决策域$\mathcal  {R}_1$。分类错误来源于蓝色、绿色和红色区域，在$x < \mathaccentV {hat}65E{x}$的情况中，产生的错误主要是将本属于$\mathcal  {C}_2$的$x$分类成$\mathcal  {C}_1$，也就是红色区域和绿色区域的总和；反过来，在$x \geqslant \mathaccentV {hat}65E{x}$的情况中，产生的错误主要是将本属于$\mathcal  {C}_1$的$x$分类成$\mathcal  {C}_2$，也就是蓝色区域了。当我们改变决策域$\mathaccentV {hat}65E{x}$的位置，由于绿色区域和蓝色区域连在一起，它们的总和是不变的，而红色区域的大小是会发生变化的。决策域$\mathaccentV {hat}65E{x}$的最佳选择，应该是两条曲线$p(x,\mathcal  {C}_1)$和$p(x,\mathcal  {C}_2)$的相交处，也就是图中$x_0$的位置，因为在这里，红色区域就完全消失了。对于分类误差最小化问题的决策规则也是这样，实质上就是要将$x$归类于后验概率$p(\mathcal  {C}_k|x)$更高的那一类。\relax }}{36}}
+\newlabel{fig:1-24}{{1{}.24}{36}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.2}期望损失最小化}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.25}{\ignorespaces 肿瘤诊断问题中的损失矩阵示例。每一行表示真实类别，每一列表示根据决策规则得出的分类结果。\relax }}{37}}
+\newlabel{fig:1-25}{{1{}.25}{37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.3}拒绝选项}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.26}{\ignorespaces 拒绝选项示意图。当两个后验概率中的最大值小于或等于某个阈值$\theta $时，这个输入$x$就会被拒绝。\relax }}{38}}
+\newlabel{fig:1-26}{{1{}.26}{38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.4}推断与决策}{38}}
+\newlabel{fig:1-27a}{{\caption@xref {fig:1-27a}{ on input line 884}}{40}}
+\newlabel{fig:1-27b}{{\caption@xref {fig:1-27b}{ on input line 884}}{40}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.27}{\ignorespaces 对一元输入变量$x$进行两种分类的条件概率密度(左图)和对应的后验概率(右图)。需要注意的是，左图中表示为蓝色曲线的分类条件概率密度$p(\boldsymbol  {\mathrm  {x}}|\mathcal  {C}_k)$对于后验概率没有影响。右图中垂直的绿线表示的是假设分类的先验概率$p(\mathcal  {C}_1)$和$p(\mathcal  {C}_2)$相等的情况下，关于$x$的使得分类误差率最小的决策界。\relax }}{40}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.5}回归问题的损失函数}{41}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.28}{\ignorespaces 使期望平方损失最小化的回归函数y(x)，由条件分布$p(t|x)$的均值得到。\relax }}{42}}
+\newlabel{fig:1-28}{{1{}.28}{42}}
+\newlabel{fig:1-29a}{{\caption@xref {fig:1-29a}{ on input line 948}}{43}}
+\newlabel{fig:1-29b}{{\caption@xref {fig:1-29b}{ on input line 948}}{43}}
+\newlabel{fig:1-29c}{{\caption@xref {fig:1-29c}{ on input line 948}}{43}}
+\newlabel{fig:1-29d}{{\caption@xref {fig:1-29d}{ on input line 948}}{43}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.29}{\ignorespaces 函数$L_q=|y-t|^q$在$q$取不同值时的图像。\relax }}{43}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.6}信息论}{44}}
+\newlabel{fig:1-30a}{{\caption@xref {fig:1-30a}{ on input line 1067}}{46}}
+\newlabel{fig:1-30b}{{\caption@xref {fig:1-30b}{ on input line 1067}}{46}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.30}{\ignorespaces 以30个箱子为例，两个不同概率分布的直方图。表现越平均的分布，熵就越低。在分布为均匀分布时，熵取得最大值$\mathrm  {H}=-\qopname  \relax o{ln}(1/30) =3.40$。\relax }}{46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.1}相对熵与互信息}{49}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1{}.31}{\ignorespaces 凸函数$f(x)$。它的每条弦(蓝色直线)都在自身(红色曲线)上或者自身的上方。\relax }}{49}}
+\newlabel{fig:1-31}{{1{}.31}{49}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}概率分布}{53}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}二元变量}{54}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.1}{\ignorespaces 二项分布(2.9)在$N=10$和$\mu =0.25$时关于$m$的直方图。\relax }}{56}}
+\newlabel{fig:2-1}{{2{}.1}{56}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}beta分布}{56}}
+\newlabel{fig:2-2a}{{\caption@xref {fig:2-2a}{ on input line 1291}}{57}}
+\newlabel{fig:2-2b}{{\caption@xref {fig:2-2b}{ on input line 1291}}{57}}
+\newlabel{fig:2-2c}{{\caption@xref {fig:2-2c}{ on input line 1291}}{57}}
+\newlabel{fig:2-2d}{{\caption@xref {fig:2-2d}{ on input line 1291}}{57}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.2}{\ignorespaces 在不同的超参数$a$，$b$下，(2.13)中的beta分布$\mathrm  {Beta}(\mu |a,b)$关于$\mu $的函数图像。\relax }}{57}}
+\newlabel{fig:2-3a}{{\caption@xref {fig:2-3a}{ on input line 1291}}{58}}
+\newlabel{fig:2-3b}{{\caption@xref {fig:2-3b}{ on input line 1291}}{58}}
+\newlabel{fig:2-3c}{{\caption@xref {fig:2-3c}{ on input line 1291}}{58}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.3}{\ignorespaces 贝叶斯推断过程中的一次分布更新。先验beta分布的超参数$a=2$，$b=2$，似然函数如(2.9)所示，其中的$N=m=1$，也就是拿到了一个新的$x=1$的数据，于是后验beta分布的超参数就是$a=3$，$b=2$了。\relax }}{58}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}多项变量}{59}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}狄利克雷分布}{61}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.4}{\ignorespaces 3个变量$\{\mu _1,\mu _2,\mu _3\}$的狄利克雷分布局限于如图所示的单型(即线性边界的流形)。这是限制条件$0 \leqslant \mu _k \leqslant 1$和$\DOTSB \sum@ \slimits@ _k\mu _k=1$所造成的。\relax }}{61}}
+\newlabel{fig:2-4}{{2{}.4}{61}}
+\newlabel{fig:2-5a}{{\caption@xref {fig:2-5a}{ on input line 1403}}{62}}
+\newlabel{fig:2-5b}{{\caption@xref {fig:2-5b}{ on input line 1403}}{62}}
+\newlabel{fig:2-5c}{{\caption@xref {fig:2-5c}{ on input line 1403}}{62}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.5}{\ignorespaces 3个变量的狄利克雷分布，其中两个水平轴是单型平面的坐标，垂直轴表示概率密度值。左图中$\{\alpha _k\}=0.1$，中间的图中$\{\alpha _k\}=1$，右图中$\{\alpha _k\}=10$。\relax }}{62}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}高斯分布}{62}}
+\newlabel{fig:2-6a}{{\caption@xref {fig:2-6a}{ on input line 1579}}{63}}
+\newlabel{fig:2-6b}{{\caption@xref {fig:2-6b}{ on input line 1579}}{63}}
+\newlabel{fig:2-6c}{{\caption@xref {fig:2-6c}{ on input line 1579}}{63}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.6}{\ignorespaces 当$N$取不同的值时，$N$个服从均匀分布的变量的均值直方图。可以看出随着$N$的增加，分布会趋近于高斯分布。\relax }}{63}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.7}{\ignorespaces 图中红色的曲线表示的是二维空间$\boldsymbol  {\mathrm  {x}}=(x_1,x_2)$的常数概率分布椭球面，对应的是$\boldsymbol  {\mathrm  {x}}=\boldsymbol  {\mu }$处的概率密度为$\qopname  \relax o{exp}{-1/2}$。椭圆的两条轴是由协方差矩阵的特征向量$\mathbf  {u}_i$得到的，其对应的特征值为$\lambda _i$。\relax }}{65}}
+\newlabel{fig:2-7}{{2{}.7}{65}}
+\newlabel{fig:2-8a}{{\caption@xref {fig:2-8a}{ on input line 1579}}{67}}
+\newlabel{fig:2-8b}{{\caption@xref {fig:2-8b}{ on input line 1579}}{67}}
+\newlabel{fig:2-8c}{{\caption@xref {fig:2-8c}{ on input line 1579}}{67}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.8}{\ignorespaces 二维高斯分布的常数概率密度轮廓线，(a)为一般情况；(b)为协方差矩阵为对角矩阵的情况，图中椭圆的两轴分别与两个坐标轴平行；(c)为协方差矩阵与单位矩阵成比例的情况，前几个图中的椭圆变成了圆。\relax }}{67}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}条件高斯分布}{68}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}边缘高斯分布}{71}}
+\newlabel{fig:2-9a}{{\caption@xref {fig:2-9a}{ on input line 1763}}{73}}
+\newlabel{fig:2-9b}{{\caption@xref {fig:2-9b}{ on input line 1763}}{73}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.9}{\ignorespaces 左图展示的是一个二元高斯分布$p(x_a,x_b)$的轮廓线，右图展示的是边缘分布$p(x_a)$(蓝色曲线)和给定$x_b=0.7$情况下的条件分布$p(x_a|x_b)$(红色曲线)。\relax }}{73}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}高斯变量的贝叶斯定理}{73}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}高斯分布的最大似然}{75}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}顺序估计}{76}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.10}{\ignorespaces 两个相关的随机变量$z$和$\theta $及根据条件期望$\mathbb  {E}[z|\theta ]$给出的回归函数$f(\theta )$的示意图。Robbins-Monro算法给出了求取根$\theta ^{\star }$的一般顺序步骤。\relax }}{78}}
+\newlabel{fig:2-10}{{2{}.10}{78}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.11}{\ignorespaces 在高斯分布中，如图2.10所示的回归函数的形式为一条直线，如图中红色直线所示。在这种情况下，随机变量$z$对应着负对数似然函数的导数，取值为$-(x-\mu _{\mathrm  {ML}})/\sigma ^2$，定义了回归函数的期望是一条直线，取值为$-(\mu -\mu _{\mathrm  {ML}})/\sigma ^2$。回归方程的根对应着真实的均值$\mu $。\relax }}{79}}
+\newlabel{fig:2-11}{{2{}.11}{79}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.6}高斯分布中的贝叶斯推断}{79}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.12}{\ignorespaces 在已知方差的高斯分布中利用贝叶斯推断得到均值$\mu $的示意图。图中的曲线的含义为，此时$\mu $的先验分布(标注了$N=0$的曲线)为高斯分布，随着数据的数量$N$的增加，(2.140)中给出的后验分布也随之变化。图中的数据是从均值为0.8，方差为0.1的高斯分布中获得的，先验选择为0。在先验和似然函数中，方差采用的都是真实值。\relax }}{81}}
+\newlabel{fig:2-12}{{2{}.12}{81}}
+\newlabel{fig:2-13a}{{\caption@xref {fig:2-13a}{ on input line 2087}}{82}}
+\newlabel{fig:2-13b}{{\caption@xref {fig:2-13b}{ on input line 2087}}{82}}
+\newlabel{fig:2-13c}{{\caption@xref {fig:2-13c}{ on input line 2087}}{82}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.13}{\ignorespaces 根据(2.146)，在参数$a$和$b$取不同值时的Gamma分布$\mathrm  {Gam}(\lambda |a,b)$的图像。\relax }}{82}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.14}{\ignorespaces 参数为$\mu _0=0,\beta =2,a=5,b=6$的正态Gamma分布(2.154)的轮廓线。\relax }}{83}}
+\newlabel{fig:2-14}{{2{}.14}{83}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.7}学生t分布}{84}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.15}{\ignorespaces 学生t分布(2.159)的图像，其中$\mu =0$，$\lambda =1$，$\nu $在不同取值时曲线也随之变化。当$\nu \rightarrow \infty $时，分布变成均值为$\mu $，精度为$\lambda $的高斯分布。\relax }}{85}}
+\newlabel{fig:2-15}{{2{}.15}{85}}
+\newlabel{fig:2-16a}{{\caption@xref {fig:2-16a}{ on input line 2151}}{86}}
+\newlabel{fig:2-16b}{{\caption@xref {fig:2-16b}{ on input line 2151}}{86}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.16}{\ignorespaces 学生t分布与高斯分布鲁棒性的比较。(a)为从高斯分布中取出30个数据点绘制的直方图分布。红色曲线为利用最大似然拟合得到的t分布曲线，绿色曲线为利用最大似然拟合得到的高斯分布曲线，但基本上完全被红色曲线盖住了。因为t分布包含了高斯分布——高斯分布是t分布的一种特殊情况——所以给出了与高斯分布几乎相同的解；(b)是在相同的数据集中加上了3个异常数据的结果，高斯分布明显受到了强烈的影响，但t分布几乎没有受到影响。\relax }}{86}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.8}周期变量}{86}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.17}{\ignorespaces 利用二维向量$\boldsymbol  {\mathrm  {x}}_n$表示周期变量$\theta _n$的示意图，所有的点都位于单位圆上。同时也标出了向量的均值$\overline  {\boldsymbol  {\mathrm  {x}}}$。\relax }}{87}}
+\newlabel{fig:2-17}{{2{}.17}{87}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.18}{\ignorespaces von Mises分布可以通过(2.173)中的二维高斯分布来推出，蓝色曲线表示密度轮廓线，红色曲线显示的单位圆为限制条件。\relax }}{88}}
+\newlabel{fig:2-18}{{2{}.18}{88}}
+\newlabel{fig:2-19a}{{\caption@xref {fig:2-19a}{ on input line 2285}}{90}}
+\newlabel{fig:2-19b}{{\caption@xref {fig:2-19b}{ on input line 2285}}{90}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.19}{\ignorespaces 在两组不同的参数值下绘制的von Mises分布，左侧为笛卡尔图，右侧为相应的极坐标图。\relax }}{90}}
+\newlabel{fig:2-20a}{{2{}.19}{90}}
+\newlabel{fig:2-20b}{{2{}.19}{90}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.20}{\ignorespaces (2.180)中的贝塞尔函数的图像，以及(2.186)中定义的函数$A(m)$的图像。\relax }}{90}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.9}高斯混合模型}{91}}
+\newlabel{fig:2-21a}{{\caption@xref {fig:2-21a}{ on input line 2359}}{92}}
+\newlabel{fig:2-21b}{{\caption@xref {fig:2-21b}{ on input line 2359}}{92}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.21}{\ignorespaces “Old Faithful”数据集，蓝色曲线表示概率密度。左图是利用最大似然得到的单一的高斯分布。很明显，单一的高斯分布很难描述数据划分成两个明显区域这一特点，而是处于数据的中心，数据相当稀疏的位置。右图中利用最大似然得到两个叠加的高斯分布，效果就好得多了。具体的手段将在第9章中详细介绍。\relax }}{92}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.22}{\ignorespaces 一维情况下的高斯混合分布，蓝色曲线为3个高斯分布(在线性组合中各自带有系数)，红色曲线为其混合分布。\relax }}{92}}
+\newlabel{fig:2-22}{{2{}.22}{92}}
+\newlabel{fig:2-23a}{{2{}.22}{92}}
+\newlabel{fig:2-23b}{{2{}.22}{92}}
+\newlabel{fig:2-23c}{{2{}.22}{92}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.23}{\ignorespaces 二维空间中3个高斯分布的混合模型。(a)为每个混合组件各自的等高线图，分别表示为红色、蓝色和绿色，并标出了各自的混合系数；(b)为混合分布的边缘概率密度$p(\boldsymbol  {\mathrm  {x}})$；(c)为分布$p(\boldsymbol  {\mathrm  {x}})$的空间图像。\relax }}{92}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}指数型分布族}{93}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}最大似然与充分统计量}{96}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}共轭先验}{97}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}无信息先验}{98}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}非参数方法}{100}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.24}{\ignorespaces 利用直方图方法进行概率密度估计的示例图，其中数据集包含了50组数据，全部的数据均来自于绿色曲线所示的分布。整个估计的过程是基于(2.241)的，将每个区域的宽度都设置了相同的值$\Delta $，并展示了$\Delta $取不同的值时直方图估计的结果。\relax }}{101}}
+\newlabel{fig:2-24}{{2{}.24}{101}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}核密度估计}{102}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.25}{\ignorespaces 对于图2.24中的数据集采用核密度模型(2.250)进行估计的结果。可以看出，$h$充当了平滑系数的角色，如果$h$过小(最上方图片)，那么密度模型将是极其混乱的；但如果$h$过大(最下方图片)，又无法描述出原分布(绿色曲线)具有双峰值的特点。采用适中的$h$值(中间图片)则可以得到较好的密度模型。\relax }}{104}}
+\newlabel{fig:2-25}{{2{}.25}{104}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}近邻方法}{104}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.26}{\ignorespaces 利用$K$近邻方法处理与图2.24和2.25相同的数据集的结果。可以看出，参数$K$控制了平滑度，所以较小的$K$(最上方的图)会使模型变得混乱，较大的$K$(最下方的图)会使得估计结果体现不出原分布具有两个峰值这一特点。\relax }}{105}}
+\newlabel{fig:2-26}{{2{}.26}{105}}
+\newlabel{fig:2-27a}{{\caption@xref {fig:2-27a}{ on input line 2695}}{106}}
+\newlabel{fig:2-27b}{{\caption@xref {fig:2-27b}{ on input line 2695}}{106}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.27}{\ignorespaces (a)\ 在$K$近邻分类中，新数据(黑色方块)的类别将根据与其最近的$K$个训练数据的类别确定。(b)\ 在最近邻分类($K=1$)中，得到的决策界由超平面组成，这些超平面是一对不同类别的数据之间连线的垂直平分线。\relax }}{106}}
+\newlabel{fig:2-28a}{{2{}.27}{106}}
+\newlabel{fig:2-28b}{{2{}.27}{106}}
+\newlabel{fig:2-28c}{{2{}.27}{106}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2{}.28}{\ignorespaces 油流数据集中200个数据的$x_6$和$x_7$，其中红色、绿色和蓝色分别表示“层状物”，“环状物”和“层状物”，并给出了不同$K$值下利用$K$近邻算法进行输入空间分类的结果。\relax }}{106}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}线性回归模型}{107}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}线性基底函数模型}{108}}
+\newlabel{fig:3-1a}{{\caption@xref {fig:3-1a}{ on input line 2761}}{109}}
+\newlabel{fig:3-1b}{{\caption@xref {fig:3-1b}{ on input line 2761}}{109}}
+\newlabel{fig:3-1c}{{\caption@xref {fig:3-1c}{ on input line 2761}}{109}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.1}{\ignorespaces 基底函数示例，从左至右分别为多项式基底函数，高斯基底函数(3.4)和sigmoid基底函数(3.5)。\relax }}{109}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}最大似然与最小二乘法}{110}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}最小二乘法的几何意义}{112}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.2}{\ignorespaces 分量为$t_1,...,t_N$的$N$维空间中最小二乘解的几何解释。通过寻找数据向量$\boldsymbol  {\mathsf  {t}}$在子空间中的正交投影确定最小二乘回归函数，这个子空间是基底函数$\phi _j(\boldsymbol  {\mathrm  {x}})$通过线性组合展开形成的，基底函数$\boldsymbol  {\varphi }_j$为长度为$N$，元素为$\phi _j(\boldsymbol  {\mathrm  {x}}_n)$的向量。\relax }}{112}}
+\newlabel{fig:3-2}{{3{}.2}{112}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}顺序学习}{113}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}正则化最小二乘法}{113}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.3}{\ignorespaces 正则项(3.29)在$q$取不同值时的图像\relax }}{114}}
+\newlabel{fig:3-3}{{3{}.3}{114}}
+\newlabel{fig:3-4a}{{\caption@xref {fig:3-4a}{ on input line 2923}}{115}}
+\newlabel{fig:3-4b}{{\caption@xref {fig:3-4b}{ on input line 2923}}{115}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.4}{\ignorespaces 未正则化的误差函数(蓝色曲线)与$q=2$(二次正则项，左)和1(lasso正则项，右)时的约束区域(3.30)，参数向量$\boldsymbol  {\mathrm  {w}}$的最优解为$\boldsymbol  {\mathrm  {w}}^{\star }$。lasso正则项可以给出$w_1^{\star }=0$这样的稀疏解。\relax }}{115}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}多项输出}{115}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}偏差-方差分解}{116}}
+\newlabel{fig:3-5a}{{\caption@xref {fig:3-5a}{ on input line 3054}}{119}}
+\newlabel{fig:3-5b}{{\caption@xref {fig:3-5b}{ on input line 3054}}{119}}
+\newlabel{fig:3-5c}{{\caption@xref {fig:3-5c}{ on input line 3054}}{119}}
+\newlabel{fig:3-5d}{{\caption@xref {fig:3-5d}{ on input line 3054}}{119}}
+\newlabel{fig:3-5e}{{\caption@xref {fig:3-5e}{ on input line 3054}}{119}}
+\newlabel{fig:3-5f}{{\caption@xref {fig:3-5f}{ on input line 3054}}{119}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.5}{\ignorespaces 偏差和方差与模型复杂度相关，模型的复杂度由参数$\lambda $控制，利用第1章中的正弦函数数据集得到的结果。数据集的数量$L=100$，每个数据集里包含$N=25$组数据，模型中包含24个高斯基底函数，算上偏差参数，参数的总数为$M=25$。左侧一列展示的是在不同$\qopname  \relax o{ln}\lambda $下的模型拟合结果(为了简洁起见并没有把100个拟合结果全画出来，而是只画了20个)。右侧一列展示的是相应产生的平均拟合结果(红色曲线)和真实的正弦函数曲线(绿色曲线)。\relax }}{119}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.6}{\ignorespaces 平方偏差、方差及其总和的图像，这个结果是对应图3.5的。同时也展示了一个包含1000个数据的测试集的平均误差。平方偏差+方差会在$\qopname  \relax o{ln}\lambda = -0.31$附近取得最小值，非常接近测试数据集上取得最小误差的位置。\relax }}{120}}
+\newlabel{fig:3-6}{{3{}.6}{120}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}贝叶斯线性回归}{120}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}参数分布}{121}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.7}{\ignorespaces 对于线性模型$y(x,\boldsymbol  {\mathrm  {w}})=w_0+w_1 x$进行顺序贝叶斯学习的示意图。每个图像对应的具体含义请详见文字部分。\relax }}{123}}
+\newlabel{fig:3-7}{{3{}.7}{123}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}预测分布}{124}}
+\newlabel{fig:3-8a}{{\caption@xref {fig:3-8a}{ on input line 3170}}{125}}
+\newlabel{fig:3-8b}{{\caption@xref {fig:3-8b}{ on input line 3170}}{125}}
+\newlabel{fig:3-8c}{{\caption@xref {fig:3-8c}{ on input line 3170}}{125}}
+\newlabel{fig:3-8d}{{\caption@xref {fig:3-8d}{ on input line 3170}}{125}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.8}{\ignorespaces 根据第1.1节中的正弦函数数据集和一个包含9个高斯基底函数(3.4)的模型构建的预测分布(3.58)。具体的讨论详见正文。\relax }}{125}}
+\newlabel{fig:3-9a}{{3{}.8}{125}}
+\newlabel{fig:3-9b}{{3{}.8}{125}}
+\newlabel{fig:3-9c}{{3{}.8}{125}}
+\newlabel{fig:3-9d}{{3{}.8}{125}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.9}{\ignorespaces 从图3.8所示的分布中抽取$\boldsymbol  {\mathrm  {w}}$后画出的对应函数$y(x,\boldsymbol  {\mathrm  {w}})$的图像。\relax }}{125}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}等价核}{126}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.10}{\ignorespaces 图3.1中的高斯基底函数的等价核$k(x,x')$，在这里画成了$x-x'$的形式，同时给出了该矩阵的3个不同$x$取值处的具体情况。生成这个核所用的数据$x$是从$(-1,1)$之间均匀取出的200个值。\relax }}{127}}
+\newlabel{fig:3-10}{{3{}.10}{127}}
+\newlabel{fig:3-11a}{{\caption@xref {fig:3-11a}{ on input line 3228}}{127}}
+\newlabel{fig:3-11b}{{\caption@xref {fig:3-11b}{ on input line 3228}}{127}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.11}{\ignorespaces $x=0$时的等价核，这里画成了$x$的函数的形式，左侧为多项式基底函数，右侧为sigmoid基底函数。需要注意的是，尽管它们对应的基底函数并非是局部的，它们也是关于$x$的局部函数。\relax }}{127}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}贝叶斯模型的对比}{128}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.12}{\ignorespaces 如果我们假设参数的后验分布是在其模$w_{\mathrm  {MAP}}$附近的尖峰，可以获得如图所示的模型证据粗略近似。\relax }}{130}}
+\newlabel{fig:3-12}{{3{}.12}{130}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.13}{\ignorespaces 三种不同复杂度的模型各自的数据集分布，$\mathcal  {M}_1$是复杂度最低的，$\mathcal  {M}_3$的复杂度最高的。这些分布都是经过归一化的。在这个例子中，对于某个数据集$\mathcal  {D}_0$，中等复杂的模型$\mathcal  {M}_2$给出的模型证据最大。\relax }}{131}}
+\newlabel{fig:3-13}{{3{}.13}{131}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}证据近似}{132}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}证据函数的评估}{133}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.14}{\ignorespaces 关于阶数$M$绘制的模型对数证据的图像，对于多项式回归模型而言，模型证据最倾向于选择$M=3$的模型。\relax }}{135}}
+\newlabel{fig:3-14}{{3{}.14}{135}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}证据函数的最大化}{135}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}有效参数的数量}{136}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.15}{\ignorespaces 似然函数的轮廓线(红色曲线)和先验概率分布(绿色曲线)，参数空间的坐标轴经过旋转后与Hessian矩阵的特征向量$\mathbf  {u}_i$对齐。对于$\alpha =0$，后验的模为最大似然解$\boldsymbol  {\mathrm  {w}}_{\mathrm  {ML}}$，而对于$\alpha \not =0$，模则位于$\boldsymbol  {\mathrm  {w}}_{\mathrm  {MAP}}=\mathbf  {m}_N$。在方向$w_1$上，由(3.87)定义的特征值$\lambda $比$\alpha $小，因此$\lambda _1 / (\lambda _1+\alpha )$接近于0，于是$w_1$的MAP值也接近于0。与之相反，在$w_2$的方向上，特征值$\lambda _2$大于$\alpha $，因此 $\lambda _2 / (\lambda _2+\alpha )$接近于1，$w_2$的MAP值接近于最大似然值。\relax }}{137}}
+\newlabel{fig:3-15}{{3{}.15}{137}}
+\newlabel{fig:3-16a}{{\caption@xref {fig:3-16a}{ on input line 3466}}{138}}
+\newlabel{fig:3-16b}{{\caption@xref {fig:3-16b}{ on input line 3466}}{138}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.16}{\ignorespaces 左图为$\gamma $和$2\alpha E_W(\mathbf  {m}_N)$与$\qopname  \relax o{ln}\alpha $的函数关系(分别为红色曲线和蓝色曲线)，这里的数据集是正弦函数数据集。这两条曲线的交点正是最优解$\alpha $。右图中的红色曲线是对数模型证据$\qopname  \relax o{ln}p(\boldsymbol  {\mathsf  {t}}|\alpha ,\beta )$关于$\qopname  \relax o{ln}\alpha $的函数关系，恰好在左图中的交点处取得峰值。蓝色曲线为测试集误差，验证了在模型证据取得最大值时模型具有最优的泛化能力。\relax }}{138}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3{}.17}{\ignorespaces 高斯基底函数模型中10个参数$w_i$与有效参数数量$\gamma $的关系，其中超参数$0 \leqslant \alpha \leqslant \infty $，于是$\gamma $的范围是$0 \leqslant \gamma \leq M$。\relax }}{138}}
+\newlabel{fig:3-17}{{3{}.17}{138}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}固定基底函数的局限性}{139}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}线性分类模型}{141}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}判别函数}{142}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}二分类问题}{142}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.1}{\ignorespaces 二维空间中线性判别函数的几何表示。红线为决策平面(这里也可以说成是决策边界)，可以看出它是与$\boldsymbol  {\mathrm  {w}}$垂直的；决策平面相对原点的偏移量由偏差参数$w_0$控制。此外，对于一个一般的点$\boldsymbol  {\mathrm  {x}}$，它到决策平面的正交距离为$y(\boldsymbol  {\mathrm  {x}})/\delimiter "026B30D \boldsymbol  {\mathrm  {w}}\delimiter "026B30D $。\relax }}{143}}
+\newlabel{fig:4-1}{{4{}.1}{143}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}多分类问题}{144}}
+\newlabel{fig:4-2a}{{\caption@xref {fig:4-2a}{ on input line 3585}}{144}}
+\newlabel{fig:4-2b}{{\caption@xref {fig:4-2b}{ on input line 3585}}{144}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.2}{\ignorespaces 通过一系列二分类判别函数建立$K$分类模型的做法会导致模糊区域的问题，如图中绿色区域所示。左图为使用OvR分类器时的情况，右图为OvO分类器时的情况。\relax }}{144}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.3}{\ignorespaces 多分类问题中的线性判别决策域示意图，其中红色表示决策边界。如果两个点$\boldsymbol  {\mathrm  {x}}_{\mathrm  {A}}$和$\boldsymbol  {\mathrm  {x}}_{\mathrm  {B}}$都位于决策域$\mathcal  {R}_k$内，那么其连线上的任意点$\mathaccentV {hat}65E{\boldsymbol  {\mathrm  {x}}}$都一定位于$\mathcal  {R}_k$内，所以决策域一定是单连接且凸的。\relax }}{145}}
+\newlabel{fig:4-3}{{4{}.3}{145}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}分类问题的最小二乘法}{145}}
+\newlabel{fig:4-4a}{{\caption@xref {fig:4-4a}{ on input line 3647}}{147}}
+\newlabel{fig:4-4b}{{\caption@xref {fig:4-4b}{ on input line 3647}}{147}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.4}{\ignorespaces 左图中展示的是两类数据以及通过最小二乘法(紫红色)和logistic回归模型(绿色，即将在第4.3.2节中讨论)得到的决策边界，两类数据分别表示为个红色叉号和蓝色圆圈。右图中展示的是添加了一些附加数据后决策边界的变化情况，可以看出最小二乘法得到的决策边界对异常值过于敏感，而logistic回归方法则不会这样。\relax }}{147}}
+\newlabel{fig:4-5a}{{4{}.4}{147}}
+\newlabel{fig:4-5b}{{4{}.4}{147}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.5}{\ignorespaces 对于一个包含3个类别的线性可分数据集，其中训练数据的类别分别表示为红色叉号、绿色十字和蓝色圆圈。图中的直线表示决策边界，背景颜色表示各自的决策域。左图是采用最小二乘法进行判别的结果。可以看出分给绿色类别的决策域非常小，绝大多数点都被误分类了。右图是采用第4.3.2节中即将介绍的logistic回归进行判别的结果，很明显分类的效果要好很多。\relax }}{147}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Fisher线性判别分析}{148}}
+\newlabel{fig:4-6a}{{\caption@xref {fig:4-6a}{ on input line 3712}}{149}}
+\newlabel{fig:4-6b}{{\caption@xref {fig:4-6b}{ on input line 3712}}{149}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.6}{\ignorespaces 左图中展示的是两类数据(红色和蓝色)投影到两类数据各自均值的连线上之后的直方图。需要注意的是，其中出现了类别重叠的问题。右图中展示的是基于Fisher线性判别分析的投影结果，很明显具有更好的效果。\relax }}{149}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.5}与最小二乘法的关系}{150}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.6}多分类问题中的Fisher线性判别分析}{151}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.7}感知机算法}{153}}
+\newlabel{fig:4-7a}{{\caption@xref {fig:4-7a}{ on input line 3862}}{155}}
+\newlabel{fig:4-7b}{{\caption@xref {fig:4-7b}{ on input line 3862}}{155}}
+\newlabel{fig:4-7c}{{\caption@xref {fig:4-7c}{ on input line 3862}}{155}}
+\newlabel{fig:4-7d}{{\caption@xref {fig:4-7d}{ on input line 3862}}{155}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.7}{\ignorespaces 感知器学习算法的收敛过程，这里展示了在二维特征空间$(\phi _1,\phi _2)$中两个类别(红色和蓝色)的数据点。左上图中的黑色箭头为初始参数向量$\boldsymbol  {\mathrm  {w}}$，黑线为相应的决策边界，箭头指向的区域为红色类别的决策区域。绿色圈出的数据点为错误分类点，因此其特征向量被添加到当前的权重向量中，从而在右上图中得到了新的决策边界。左下图展示的是下一个要考虑的错误分类点，由绿色圆圈表示，并将其特征向量再次添加到权重向量中，从而得到右下图中的决策边界，这次所有数据点的分类都正确了。\relax }}{155}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.8}{\ignorespaces 这段是介绍历史，还特别长，就不翻译了哈。。。【逃跑】\relax }}{155}}
+\newlabel{fig:4-8}{{4{}.8}{155}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}概率生成模型}{156}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.9}{\ignorespaces 公式(4.59)所定义的logistic sigmoid函数$\sigma (a)$的函数图像(红色曲线)，同时展示了经过放缩的逆概率函数(inverse probit function)$\Phi (\lambda a)$，其中$\lambda ^2 = \pi /8$(蓝色虚线)，$\Phi (a)$的定义详见公式(4.114)。放缩因子$\pi /8$是为了让两个函数在$a=0$的时候具有相同的函数值。\relax }}{156}}
+\newlabel{fig:4-9}{{4{}.9}{156}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}输入量为连续变量的情况}{157}}
+\newlabel{fig:4-10a}{{\caption@xref {fig:4-10a}{ on input line 3964}}{158}}
+\newlabel{fig:4-10b}{{\caption@xref {fig:4-10b}{ on input line 3964}}{158}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.10}{\ignorespaces 左图展示的是两个类别的类别条件概率密度，分别表示为红色和蓝色。右图为对应的后验概率$p(\mathcal  {C}_1|\boldsymbol  {\mathrm  {x}})$，它是一个以$\boldsymbol  {\mathrm  {x}}$的线性函数为自变量的logistic sigmoid函数。右图的曲面采用了渐变色，红色表示$p(\mathcal  {C}_1|\boldsymbol  {\mathrm  {x}})$，蓝色表示$p(\mathcal  {C}_2|\boldsymbol  {\mathrm  {x}})=1-p(\mathcal  {C}_2|\boldsymbol  {\mathrm  {x}})$，所以整个曲面呈现了从红到蓝的变化过程。\relax }}{158}}
+\newlabel{fig:4-11a}{{\caption@xref {fig:4-11a}{ on input line 3964}}{159}}
+\newlabel{fig:4-11b}{{\caption@xref {fig:4-11b}{ on input line 3964}}{159}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.11}{\ignorespaces 左图显示了三个类别的类别条件概率密度，每个类别各自对应一个高斯分布，分别表示为红色，绿色和蓝色，其中红色和绿色的类别具有相同的协方差矩阵。右图展示了相应的后验概率，其中RGB颜色矢量分别相应三个类别的后验概率。同时也展示了决策边界。需要注意的是，在具有相同协方差矩阵的红色和绿色类别之间，决策边界是线性的，而其他的边界则是二次的。\relax }}{159}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}最大似然方法}{159}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}神经网络}{161}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}核方法}{163}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}稀疏核机器}{165}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}图模型}{167}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}混合模型与EM算法}{169}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {10}近似推断}{171}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {11}采样方法}{173}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {12}连续隐变量}{175}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {13}顺序数据}{177}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {14}组合模型}{179}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}

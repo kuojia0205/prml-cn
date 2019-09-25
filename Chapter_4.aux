@@ -1,0 +1,70 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}绪 \hskip 1em\relax 论}{1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}概率分布}{3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}线性回归模型}{5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}线性分类模型}{7}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}判别函数}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}二分类问题}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.1}{\ignorespaces 二维空间中线性判别函数的几何表示。红线为决策平面(这里也可以说成是决策边界)，可以看出它是与$\boldsymbol  {\mathrm  {w}}$垂直的；决策平面相对原点的偏移量由偏差参数$w_0$控制。此外，对于一个一般的点$\boldsymbol  {\mathrm  {x}}$，它到决策平面的正交距离为$y(\boldsymbol  {\mathrm  {x}})/\delimiter "026B30D \boldsymbol  {\mathrm  {w}}\delimiter "026B30D $。\relax }}{9}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:4-1}{{4{}.1}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}多分类问题}{10}}
+\newlabel{fig:4-2a}{{\caption@xref {fig:4-2a}{ on input line 199}}{10}}
+\newlabel{fig:4-2b}{{\caption@xref {fig:4-2b}{ on input line 199}}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.2}{\ignorespaces 通过一系列二分类判别函数建立$K$分类模型的做法会导致模糊区域的问题，如图中绿色区域所示。左图为使用OvR分类器时的情况，右图为OvO分类器时的情况。\relax }}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.3}{\ignorespaces 多分类问题中的线性判别决策域示意图，其中红色表示决策边界。如果两个点$\boldsymbol  {\mathrm  {x}}_{\mathrm  {A}}$和$\boldsymbol  {\mathrm  {x}}_{\mathrm  {B}}$都位于决策域$\mathcal  {R}_k$内，那么其连线上的任意点$\mathaccentV {hat}65E{\boldsymbol  {\mathrm  {x}}}$都一定位于$\mathcal  {R}_k$内，所以决策域一定是单连接且凸的。\relax }}{11}}
+\newlabel{fig:4-3}{{4{}.3}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}分类问题的最小二乘法}{11}}
+\newlabel{fig:4-4a}{{\caption@xref {fig:4-4a}{ on input line 261}}{13}}
+\newlabel{fig:4-4b}{{\caption@xref {fig:4-4b}{ on input line 261}}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.4}{\ignorespaces 左图中展示的是两类数据以及通过最小二乘法(紫红色)和logistic回归模型(绿色，即将在第4.3.2节中讨论)得到的决策边界，两类数据分别表示为个红色叉号和蓝色圆圈。右图中展示的是添加了一些附加数据后决策边界的变化情况，可以看出最小二乘法得到的决策边界对异常值过于敏感，而logistic回归方法则不会这样。\relax }}{13}}
+\newlabel{fig:4-5a}{{4{}.4}{13}}
+\newlabel{fig:4-5b}{{4{}.4}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.5}{\ignorespaces 对于一个包含3个类别的线性可分数据集，其中训练数据的类别分别表示为红色叉号、绿色十字和蓝色圆圈。图中的直线表示决策边界，背景颜色表示各自的决策域。左图是采用最小二乘法进行判别的结果。可以看出分给绿色类别的决策域非常小，绝大多数点都被误分类了。右图是采用第4.3.2节中即将介绍的logistic回归进行判别的结果，很明显分类的效果要好很多。\relax }}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Fisher线性判别分析}{14}}
+\newlabel{fig:4-6a}{{\caption@xref {fig:4-6a}{ on input line 326}}{15}}
+\newlabel{fig:4-6b}{{\caption@xref {fig:4-6b}{ on input line 326}}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.6}{\ignorespaces 左图中展示的是两类数据(红色和蓝色)投影到两类数据各自均值的连线上之后的直方图。需要注意的是，其中出现了类别重叠的问题。右图中展示的是基于Fisher线性判别分析的投影结果，很明显具有更好的效果。\relax }}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.5}与最小二乘法的关系}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.6}多分类问题中的Fisher线性判别分析}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.7}感知机算法}{19}}
+\newlabel{fig:4-7a}{{\caption@xref {fig:4-7a}{ on input line 476}}{21}}
+\newlabel{fig:4-7b}{{\caption@xref {fig:4-7b}{ on input line 476}}{21}}
+\newlabel{fig:4-7c}{{\caption@xref {fig:4-7c}{ on input line 476}}{21}}
+\newlabel{fig:4-7d}{{\caption@xref {fig:4-7d}{ on input line 476}}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.7}{\ignorespaces 感知器学习算法的收敛过程，这里展示了在二维特征空间$(\phi _1,\phi _2)$中两个类别(红色和蓝色)的数据点。左上图中的黑色箭头为初始参数向量$\boldsymbol  {\mathrm  {w}}$，黑线为相应的决策边界，箭头指向的区域为红色类别的决策区域。绿色圈出的数据点为错误分类点，因此其特征向量被添加到当前的权重向量中，从而在右上图中得到了新的决策边界。左下图展示的是下一个要考虑的错误分类点，由绿色圆圈表示，并将其特征向量再次添加到权重向量中，从而得到右下图中的决策边界，这次所有数据点的分类都正确了。\relax }}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.8}{\ignorespaces 这段是介绍历史，还特别长，就不翻译了哈。。。【逃跑】\relax }}{21}}
+\newlabel{fig:4-8}{{4{}.8}{21}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}概率生成模型}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.9}{\ignorespaces 公式(4.59)所定义的logistic sigmoid函数$\sigma (a)$的函数图像(红色曲线)，同时展示了经过放缩的逆概率函数(inverse probit function)$\Phi (\lambda a)$，其中$\lambda ^2 = \pi /8$(蓝色虚线)，$\Phi (a)$的定义详见公式(4.114)。放缩因子$\pi /8$是为了让两个函数在$a=0$的时候具有相同的函数值。\relax }}{22}}
+\newlabel{fig:4-9}{{4{}.9}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}输入量为连续变量的情况}{23}}
+\newlabel{fig:4-10a}{{\caption@xref {fig:4-10a}{ on input line 578}}{24}}
+\newlabel{fig:4-10b}{{\caption@xref {fig:4-10b}{ on input line 578}}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.10}{\ignorespaces 左图展示的是两个类别的类别条件概率密度，分别表示为红色和蓝色。右图为对应的后验概率$p(\mathcal  {C}_1|\boldsymbol  {\mathrm  {x}})$，它是一个以$\boldsymbol  {\mathrm  {x}}$的线性函数为自变量的logistic sigmoid函数。右图的曲面采用了渐变色，红色表示$p(\mathcal  {C}_1|\boldsymbol  {\mathrm  {x}})$，蓝色表示$p(\mathcal  {C}_2|\boldsymbol  {\mathrm  {x}})=1-p(\mathcal  {C}_2|\boldsymbol  {\mathrm  {x}})$，所以整个曲面呈现了从红到蓝的变化过程。\relax }}{24}}
+\newlabel{fig:4-11a}{{\caption@xref {fig:4-11a}{ on input line 578}}{25}}
+\newlabel{fig:4-11b}{{\caption@xref {fig:4-11b}{ on input line 578}}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.11}{\ignorespaces 左图显示了三个类别的类别条件概率密度，每个类别各自对应一个高斯分布，分别表示为红色，绿色和蓝色，其中红色和绿色的类别具有相同的协方差矩阵。右图展示了相应的后验概率，其中RGB颜色矢量分别相应三个类别的后验概率。同时也展示了决策边界。需要注意的是，在具有相同协方差矩阵的红色和绿色类别之间，决策边界是线性的，而其他的边界则是二次的。\relax }}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}最大似然方法}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}输入变量为离散变量的情况}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}指数族分布}{27}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}概率判别模型}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}固定基底函数}{28}}
+\newlabel{fig:4-12a}{{\caption@xref {fig:4-12a}{ on input line 690}}{29}}
+\newlabel{fig:4-12b}{{\caption@xref {fig:4-12b}{ on input line 690}}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.12}{\ignorespaces 非线性基底函数在线性分类模型中的应用。左图中展示了原始的输入空间$(x_1,x_2)$和两类数据(红色和蓝色)。同时在这个空间中定义了两个“高斯”基底函数$\phi _1(\boldsymbol  {\mathrm  {x}})$和$\phi _2(\boldsymbol  {\mathrm  {x}})$，其中心位于绿色的“+”，其轮廓为图中绿色的圆。右图中展示的是对应的特征空间$(\phi _1, \phi _2)$和利用logistic回归模型(详见第4.3.2节)确定的线性决策边界。这条决策边界在原始空间中对应的是一个非线性的决策边界，也就是左图中黑色的曲线。\relax }}{29}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}logistic回归}{30}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}迭代重加权最小二乘法}{31}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}多分类logistic回归}{33}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}probit回归}{34}}
+\newlabel{fig:4-13}{{\caption@xref {fig:4-13}{ on input line 865}}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4{}.13}{\ignorespaces 概率密度函数$p(\theta )$如图中的蓝色曲线所示，该概率密度是一个高斯混合模型，包含有2个分量。图中的红色曲线为概率分布函数。其中，蓝色曲线对应的函数值(例如垂直绿色直线处)是该点处红色曲线的斜率，而红色曲线对应的函数值则等于蓝色曲线下方绿色阴影部分的面积。在随机阈值模型中，如果$a = \boldsymbol  {\mathrm  {w}}^{\mathrm  {T}} \boldsymbol  {\phi }$的值超过阈值则将类别标签标记为$t = 1$，否则$t = 0$。这与分布函数$f(a)$给出的激活函数是等价的。\relax }}{35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.6}标准联系函数}{36}}

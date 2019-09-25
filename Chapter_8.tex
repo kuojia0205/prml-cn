@@ -1,0 +1,133 @@
+\documentclass[10pt, b5paper]{book}
+\usepackage{ctex}
+\usepackage[margin=0.8in]{geometry}
+\geometry{top=2.5cm}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{cuted}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyhdr}
+\usepackage{xeCJK}
+\usepackage{titlesec}
+\definecolor{titleBlue}{RGB}{30,59,150}
+\titleformat{\chapter}[block]{\huge\bfseries\color{titleBlue}}{第 \thechapter 章}{1em}{}
+\titleformat{\section}[block]{\Large\bfseries\color{titleBlue}}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\large\bfseries\color{titleBlue}}{\thesubsection}{1em}{}
+\titlespacing*{\section} {0pt}{10pt}{0pt}
+% \renewcommand{\chaptermark}[1]{\markboth{第\,\thechapter\,章\quad #1}{}}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\CJKfamily{hei} \color{titleBlue}{第 \thechapter 章\quad #1} }{}}
+\renewcommand{\sectionmark}[1]{\markright{\CJKfamily{hei} \color{titleBlue}  \thesection \quad #1}{}}
+
+\fancyhead{} % clear all fields
+\fancyhead[LO]{\CJKfamily{hei} \bfseries \color{titleBlue}{\rightmark}}
+\fancyhead[RO]{\CJKfamily{hei} \bfseries \color{titleBlue}  \thepage}
+\fancyhead[LE]{\CJKfamily{hei} \bfseries \color{titleBlue}  \thepage}
+\fancyhead[RE]{\CJKfamily{hei} \bfseries \color{titleBlue}{\leftmark}}
+
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\setlength{\parindent}{2em}
+\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+\numberwithin{equation}{chapter}
+
+\newcommand {\bx} {\boldsymbol{\mathrm{x}}}
+\newcommand {\bw} {\boldsymbol{\mathrm{w}}}
+\newcommand {\sfx} {\boldsymbol{\mathsf{x}}}
+\newcommand {\sft} {\boldsymbol{\mathsf{t}}}
+\newcommand {\sfy} {\boldsymbol{\mathsf{y}}}
+\newcommand {\rmT} {\mathrm{T}}
+\newcommand {\rmd} {\mathrm{d}}
+\newcommand {\bfMu} {\boldsymbol{\mu}}
+\newcommand {\bfAl} {\boldsymbol{\alpha}}
+\newcommand {\bfSigma} {\boldsymbol{\Sigma}}
+\newcommand {\bfLambda} {\boldsymbol{\Lambda}}
+\newcommand {\bfPhi} {\boldsymbol{\Phi}}
+\newcommand {\bfphi} {\boldsymbol{\phi}}
+\newcommand {\bfeta} {\boldsymbol{\eta}}
+\newcommand {\calD} {\mathcal{D}}
+\newcommand {\calN} {\mathcal{N}}
+\newcommand {\calR} {\mathcal{R}}
+\newcommand {\insertline} {\noindent{\color{red} \rule[5pt]{\textwidth}{0.1em}}}
+
+\author{张括嘉 \\ 东北大学机器人科学与工程学院}
+
+\begin{document}
+\title{Pattern Recognition and Machine Learning 中文版}
+\date{}
+% \maketitle
+	\chapter{绪论}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+	
+	\chapter{概率分布}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+	
+	\chapter{线性回归模型}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+	
+	\chapter{线性分类模型}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{神经网络}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+	
+	\chapter{核方法}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{稀疏核机器}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\chapter{图模型}
+	\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+	\renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+	\renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+
+	\subsection{线性高斯模型}
+	\textnormal{
+	在前面的章节中，我们看到如何通过有向无环图对于一系列离散变量构建其联合概率分布。现在我们来展示多元高斯分布是如何表示为有向图的，而且该有向图的各个节点对应的是一个变量的线性高斯模型。这使得我们可以通过一般的高斯分布和协方差矩阵为对角矩阵的高斯分布构建不同的分布。概率主成分分析(probabilistic principal component analysis)，因子分析(factor analysis)和线性动态系统(linear dynamical system)是比较常用的线性高斯模型(Roweis and Ghahramani, 1999)。我们会在后续的章节中广泛应用本节中的一些结论。
+	\indent 假设现在有一个包含有$D$个变量的有向无环图，其节点$i$表示一个一元连续随机变量$x_i$，且这个随机变量服从高斯分布。这个分布的均值被设置为节点$i$的父节点$\mathrm{pa}_i$状态的线性组合
+	\begin{equation}
+		p(x_i|\mathrm{pa}_i) = \calN\left(x_i | \sum_{j \in \mathrm{pa}_i}w_{ij}x_j + b_i, v_i\right)
+	\end{equation}
+	其中$w_{ij}$和$b_i$为控制均值的参数，$v_i$为$x_i$条件分布的方差。这个联合分布的对数可以写成图中所有节点所对应的条件分布乘积的对数，于是可以写成
+	\begin{align}
+		\ln p(\bx) &= \sum_{i=1}^D \ln p(x_i|\mathrm{pa}_i) \\
+		&= -\sum_{i=1}^D \frac{1}{2v_i}\left(x_i - \sum_{j \in \mathrm{pa}_i} w_{ij}x_j - b_j\right)^2 + \mathrm{const}
+	\end{align}
+	其中$\bx = (x_1,...,x_D)^{\rmT}$，$\mathrm{const}$项表示与$\bx$相互独立的项。很明显这是一个关于$\bx$的二次函数，所以联合分布$p(\bx)$为多元高斯分布。\\
+	\indent 我们可以通过如下的递归方法确定联合分布的均值和协方差。对于每个变量$x_i$，它们都具有自己对应的条件高斯分布(8.11)，当然是给定其父节点状态的条件下的分布，所以
+	\begin{equation}
+		x_i = \sum_{j \in \mathrm{pa}_i} w_{ij}x_j + b_j + \sqrt{v_i} \epsilon_i
+	\end{equation}
+	其中$\epsilon_i$表示的是均值为0，方差为1的高斯随机变量，满足$\mathbb{E}[\epsilon_i] = 0$和$\mathbb{E}[\epsilon_i\epsilon_j] = I_{ij}$，其中$I_{ij}$表示单位矩阵中第$i$行，第$j$列的元素。对(8.14)求期望，可以得到
+	\begin{equation}
+		\mathbb{E}[x_i] = \sum_{j \in \mathrm{pa}_i} w_{ij} \mathbb{E}[x_j] + b_i
+	\end{equation}
+	这样一来
+	}
+\end{document}
